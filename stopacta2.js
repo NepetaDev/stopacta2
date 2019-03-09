@@ -134,6 +134,7 @@
     mainDiv.className = "";
     setTimeout(function () {
       mainDiv.remove();
+      styleElement.remove();
     }, 500);
   }
 
