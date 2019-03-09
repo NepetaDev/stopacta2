@@ -186,8 +186,8 @@
     }, 100);
   }
   
-  //if (!wasPresented) {
+  if (!wasPresented) {
     init();
     show();
-  //}
+  }
 })();
