@@ -29,7 +29,7 @@
   // REMEMBER TO KEEP THE HTML TAGS IN PLACE WHILE TRANSLATING.
   var messages = {
     "en": {
-      "title": "WARNING!\nThe website you're trying to reach right now may not be available in near future.",
+      "title": "WARNING!\nThe website you're trying to reach right now may stop being available in near future.",
       "text": "The battle for the Internet freedom is not over yet. Publishing corporations are trying to get their hands on the content we share and limit our fundamental rights.<br>" +
       "People in charge of the European Union are trying to push Article 11 and Article 13 on us to take away our freedoms and put them in the hands of these greedy corporations via such tools as upload filters and link tax.<br>" +
       "This will effectively end the Internet freedom in the European Union.<br>" +
