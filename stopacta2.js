@@ -26,10 +26,14 @@
   var urlToOpen = "https://www.stopacta2.org/";
   var fallbackLanguage = "en";
 
+  // REMEMBER TO KEEP THE HTML TAGS IN PLACE WHILE TRANSLATING.
   var messages = {
     "en": {
-      "title": "WARNING! The website you're trying to reach right now may not be available in near future.",
-      "text": "The Copyright Directive in the Digital Single Market has many names on the Internet. Here are some of them: #CopyrightDirective, #SaveYourInternet, #SaveTheInternet, # Article11, # Article13, #UploadFilters, #LinkTax, #Filternet, #CensorshipMachines. We call it “ACTA 2”, because ACTA in the online community is a synonym of an attempt to legalize censorship of the Internet. The directive was supposed to update the copyright protection regulations to help the creators. Unfortunately, the legislators went a different path and prepared legal solutions that would destroy the Internet as we know it. #ACTA2 will force the EU to create an AI super infrastructure that will automatically censor online content before it will be posted. Each portal and application (desktop or mobile) will need to be connected to it avoid the economic risk of being financially liable for a post or comment (even by comming from an anonymous user) of protected content.\nToday, this infrastructure will be used to protect copyrights in a radicle way. Unfortunately, ACTA 2 not only enforces the creation of censorship infrastructure, it also introduces a precedent to the European legal system, allowing for preventive censorship of content. Because of this tomorrow, this infrastructure and legal precedent will be used to censor moral content. Already, the European Commission is preparing legal solutions in forms of different directives that will use ACTA2 to censor content about organizations considered to be “radical”. Recently popular topic in the EU is hate speech and “fake news”. Right now there are ideas of “filtering”, and blocking of this type of content aswell.",
+      "title": "WARNING!\nThe website you're trying to reach right now may not be available in near future.",
+      "text": "The battle for the Internet freedom is not over yet. Publishing corporations are trying to get their hands on the content we share and limit our fundamental rights.<br>" +
+      "People in charge of the European Union are trying to push Article 11 and Article 13 on us to take away our freedoms and put them in the hands of these greedy corporations via such tools as upload filters and link tax.<br>" +
+      "This will effectively end the Internet freedom in the European Union.<br>" +
+      "<b>It also sets a dangerous precedent that other countries may soon follow.</b>",
       "actNow": "ACT NOW!",
       "dismiss": "I don't care about the Internet."
     }
@@ -145,7 +149,7 @@
     contentDiv.appendChild(header);
 
     var messageDiv = document.createElement("div");
-    messageDiv.innerText = message.text;
+    messageDiv.innerHTML = message.text;
     messageDiv.className = id + "-message";
     contentDiv.appendChild(messageDiv);
 
@@ -182,8 +186,8 @@
     }, 100);
   }
   
-  if (!wasPresented) {
+  //if (!wasPresented) {
     init();
     show();
-  }
+  //}
 })();
